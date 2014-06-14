@@ -1,0 +1,13 @@
+import "oaidl.idl";
+import "ocidl.idl";
+import "unknwn.idl";
+[
+	object,
+	uuid(AFD0DA5D-DEEF-4005-A214-E1C0800C544C),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+] interface cxInterface : IUnknown
+{
+	HRESULT cxPrint(const char * msg )=0;
+};
